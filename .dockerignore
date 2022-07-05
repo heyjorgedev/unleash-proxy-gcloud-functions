@@ -1,1 +1,11 @@
+# Dependencies
 node_modules/
+app.json
+
+# Git related stuff
+.git/
+.gitignore
+
+# Documentation
+LICENSE
+README.md
