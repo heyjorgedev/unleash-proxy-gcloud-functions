@@ -2,24 +2,30 @@
   "name": "unleash-proxy",
   "env": {
       "UNLEASH_URL": {
-          "description": "specify a css color",
+          "description": "The API URL of the Unleash instance you want to connect to",
           "required": true
+      },
+      "UNLEASH_API_TOKEN": {
+        "description": "API Key to use on the proxy client sdk",
+        "required": true
       },
       "UNLEASH_INSTANCE_ID": {
-          "description": "title for your site",
-          "required": true
+          "description": "Typically a hostname, pod id or something similar",
+          "required": false
       },
       "UNLEASH_APP_NAME": {
+          "description": "The application name to use when registering with Unleash",
           "value": "production"
+      },
+      "UNLEASH_FETCH_INTERVAL": {
+        "description": "How often the proxy should query Unleash for updates, defined in ms.",
+        "value": "5000"
       },
       "UNLEASH_PROXY_SECRETS": {
         "description": "API Key to use on the proxy client sdk",
         "generator": "secret"
-      },
-      "UNLEASH_API_TOKEN": {
-        "description": "API Key to use on the proxy client sdk",
-        "generator": "secret"
       }
+
   },
   "options": {
       "allow-unauthenticated": true,
