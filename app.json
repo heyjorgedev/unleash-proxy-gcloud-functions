@@ -1,0 +1,33 @@
+{
+  "name": "unleash-proxy",
+  "env": {
+      "UNLEASH_URL": {
+          "description": "specify a css color",
+          "required": true
+      },
+      "UNLEASH_INSTANCE_ID": {
+          "description": "title for your site",
+          "required": true
+      },
+      "UNLEASH_APP_NAME": {
+          "value": "production"
+      },
+      "UNLEASH_PROXY_SECRETS": {
+        "description": "API Key to use on the proxy client sdk",
+        "generator": "secret"
+      },
+      "UNLEASH_API_TOKEN": {
+        "description": "API Key to use on the proxy client sdk",
+        "generator": "secret"
+      }
+  },
+  "options": {
+      "allow-unauthenticated": true,
+      "memory": "512Mi",
+      "cpu": "1",
+      "port": 8080,
+      "http2": false,
+      "concurrency": 80,
+      "max-instances": 10
+  }
+}
