@@ -7,7 +7,7 @@ This project extends a bit the unleash-proxy to use the functions framework buil
 ### Cloud Run
 You can easily install this into Google Cloud Run by clicking the button underneath:
 <p>
-  <a href="https://deploy.cloud.run">
+  <a href="https://deploy.cloud.run?git_repo=https://github.com/jorgemurta/unleash-proxy-gcloud-functions">
     <img src="https://deploy.cloud.run/button.svg" alt="Run on Google Cloud">
   </a>
 </p>
