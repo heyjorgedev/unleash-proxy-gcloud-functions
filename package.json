@@ -13,7 +13,7 @@
   "dependencies": {
     "@google-cloud/functions-framework": "^3.4.2",
     "@unleash/proxy": "^1.0.1",
-    "express": "^4.21.1"
+    "express": "^4.21.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
